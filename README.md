@@ -1,7 +1,3 @@
-# Accessing_Aws_Instance_by_cmd_promt
-This repo shows you, How to access the AWS instances by the help of cmd promt.
-
-
 # Accessing an AWS EC2 Instance: Two Methods
 
 This comprehensive tutorial demonstrates **two reliable ways** to connect to your AWS EC2 instance, giving you secure SSH terminal access from your local machine.
