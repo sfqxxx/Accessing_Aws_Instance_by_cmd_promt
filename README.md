@@ -39,10 +39,14 @@ Before you begin, ensure you have:
 3. Click the **Connect** button
 4. Choose the **SSH Client** tab
 5. **Copy the example SSH command** provided by AWS
+   <img width="940" height="372" alt="image" src="https://github.com/user-attachments/assets/2fb12cb6-c937-47f5-8458-e1887a6f2522" />
+
 
 #### 2. Prepare Your Local Environment
 
 1. Open **Command Prompt** (`cmd`) on your Windows machine
+   <img width="940" height="752" alt="image" src="https://github.com/user-attachments/assets/a6ba5cc5-e8ca-4056-b447-b254fdcf9b68" />
+
 2. Navigate to the folder containing your `.pem` key file:
    ```bash
    cd C:\path\to\your\key\folder
@@ -81,51 +85,37 @@ ssh -i "my-key.pem" ec2-user@ec2-123-45-67-89.compute-1.amazonaws.com
 
 ### Step-by-Step Instructions
 
-#### 1. Download and Install PuTTY
 
-If you don't have PuTTY installed:
-- Download from [official PuTTY website](https://www.putty.org/)
-- Install both **PuTTY** and **PuTTYgen**
-
-#### 2. Convert PEM to PPK (If Needed)
-
-If you have a `.pem` file, convert it to `.ppk` format:
-
-1. Open **PuTTYgen**
-2. Click **Load** and select your `.pem` file
-3. Click **Save private key** (choose **Yes** to skip passphrase)
-4. Save as `your-key.ppk`
-
-#### 3. Configure PuTTY Connection
+#### 1. Configure PuTTY Connection
 
 1. **Open PuTTY**
+   <img width="940" height="717" alt="image" src="https://github.com/user-attachments/assets/d285cbb3-9d3b-450b-9e8e-7e1379fd05a0" />
+
 2. In the **Host Name** field, enter your instance's:
    - Public IP address, OR
    - Public DNS name
    
    **Example:** `ec2-123-45-67-89.compute-1.amazonaws.com`
 
-3. Ensure **Port** is set to `22` and **Connection type** is `SSH`
+2. Ensure **Port** is set to `22` and **Connection type** is `SSH`
 
-#### 4. Load Your Private Key
+#### 3. Load Your Private Key
+<img width="940" height="638" alt="image" src="https://github.com/user-attachments/assets/e01f9ea3-5a03-4ea5-b7e7-fffbe8ab26bc" />
 
 1. In the left panel, navigate to:  
    `Connection` → `SSH` → `Auth` → `Credentials`
 2. Click **Browse** next to "Private key file for authentication"
 3. Select your `.ppk` key file
 
-#### 5. Save Session (Optional but Recommended)
-
-1. Return to the **Session** category
-2. Enter a name in **Saved Sessions** (e.g., "My EC2 Server")
-3. Click **Save** for future use
-
-#### 6. Connect to Your Instance
+#### 4. Connect to Your Instance
 
 1. Click **Open** to start the connection
 2. If prompted with a security alert, click **Accept**
 3. **Login as:** Enter `ec2-user` (or appropriate username for your AMI)
 4. **Success!** You're now connected to your EC2 instance
+   <img width="940" height="741" alt="image" src="https://github.com/user-attachments/assets/c484ad4a-849f-488f-92ef-d78a8f5dc479" />
+<img width="940" height="597" alt="image" src="https://github.com/user-attachments/assets/0dba1b6d-e2a3-4cec-a6e6-788080506d68" />
+
 
 ---
 
